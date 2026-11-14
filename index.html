@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lostly – From missing to managed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Styles (order matters: later files may override earlier ones) -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/browse.css">
+<link rel="stylesheet" href="css/item.css">
+<link rel="stylesheet" href="css/admin.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div style="flex:1;display:flex;flex-direction:column">
+  <div id="top"></div>
+  <div id="nbar" class="nbar hide" role="status" aria-live="polite"></div>
+  <main id="app"></main>
+</div>
+<div id="toast" class="toast" role="status"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Scripts share one global scope, so load order matters -->
+<!-- 1. Foundation -->
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/data.js"></script>
+<script src="js/cloud.js"></script>
+<!-- 2. Features -->
+<script src="js/auth.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/items.js"></script>
+<script src="js/admin.js"></script>
+<!-- 3. Screens -->
+<script src="js/views/login-view.js"></script>
+<script src="js/views/home-view.js"></script>
+<script src="js/views/form-view.js"></script>
+<script src="js/views/browse-view.js"></script>
+<script src="js/views/item-view.js"></script>
+<!-- 4. App wiring (router needs the views above) -->
+<script src="js/router.js"></script>
+<script src="js/events.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
