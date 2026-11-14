@@ -1,0 +1,4 @@
+/* Responsive and reduced-motion rules */
+@media(max-width:820px){.split{grid-template-columns:1fr}.lside{min-height:240px;padding:20px}.orb{width:120px;font-size:3.4rem;transform:translate(-50%,-90%)}.lside h2{font-size:1.2rem}.rside{padding:24px 20px}
+.cols{grid-template-columns:1fr}.col{min-height:160px}.shop{grid-template-columns:1fr}.detail{grid-template-columns:1fr}.hdr .cell{display:none}.ft{grid-template-columns:1fr}.ft .y{border:0}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition:none!important}}

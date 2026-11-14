@@ -1,0 +1,18 @@
+/* Base: variables, reset, layout shell, keyframes, typography */
+:root{--bg:#fffaee;--text:#2b2a26;--muted:#6f6a5c;--lost:#fb8b62;--found:#dbdb78;--a1:#a6cff4;--a2:#ffe777;--lostd:#c9532c;--foundd:#9b9b36;--line:#e6d6b4;--req:#d32f2f;--serif:'Fraunces',Georgia,serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg) url("../bg.jpg") repeat;background-size:440px;color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.45;overflow-x:hidden}
+main{flex:1;display:flex;flex-direction:column}
+main.pad{padding:0 clamp(12px,3vw,44px) 0}
+.page{flex:1;display:flex;flex-direction:column;animation:up .45s both}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}
+@keyframes slide{from{opacity:0;transform:translateY(-100%)}}
+@keyframes pop{0%{transform:scale(.97)}50%{transform:scale(1.015)}}
+@keyframes ping{75%,100%{transform:scale(2.2);opacity:0}}
+@keyframes bob{to{transform:translateY(-16px) rotate(8deg)}}
+h1,h2,h3,.logo{font-family:var(--serif)}
+button,input,select{font:inherit;color:inherit}
+.hide{display:none!important}
+.req{color:var(--req);font-style:normal;font-weight:800;margin-left:2px}
+.logo{font-weight:700;font-size:1.5rem;cursor:pointer;letter-spacing:-.5px;white-space:nowrap}.logo span{background:var(--a2);padding:0 6px;border-radius:6px}
+.biglogo{font-size:2.6rem;cursor:default}

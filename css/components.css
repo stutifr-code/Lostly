@@ -1,0 +1,14 @@
+/* Shared components: buttons, hints, doodles, pills, small buttons, toast */
+.btn{border:0;border-radius:12px;padding:12px 18px;background:var(--a1);font-weight:700;cursor:pointer;transition:transform .15s,filter .2s}
+.btn:hover{filter:brightness(.95);transform:translateY(-2px)}.btn:active{transform:scale(.97)}
+.btn.white{background:#fff;margin-top:10px}
+.back{align-self:flex-start;background:none;border:0;cursor:pointer;font-weight:700;padding:14px 0 6px}
+.hint{color:var(--muted);font-size:.85rem}
+.err{color:#b3261e;font-size:.88rem;margin-top:8px;min-height:1.2em}
+/* floating doodles */
+.fl{position:absolute;font-size:2.4rem;animation:bob 3.6s ease-in-out infinite alternate;animation-delay:var(--d,0s);filter:drop-shadow(0 6px 6px rgba(0,0,0,.12))}
+.pill{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:6px 14px;cursor:pointer;font-weight:600;font-size:.88rem}.pill.on,.pill:hover{background:var(--a2)}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.sm{border:1.5px solid var(--text);background:var(--a2);border-radius:99px;padding:4px 12px;font-size:.78rem;font-weight:700;cursor:pointer;transition:.2s}.sm:hover{filter:brightness(.95);transform:translateY(-2px)}.sm.d{background:var(--lost)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,90px);background:var(--text);color:#fff;padding:10px 20px;border-radius:99px;transition:transform .35s;z-index:30}
+.toast.show{transform:translate(-50%,0)}

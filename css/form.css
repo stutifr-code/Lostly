@@ -1,0 +1,19 @@
+/* Report form (poster) */
+.posterwrap{display:flex;flex-direction:column;align-items:center;padding-bottom:30px}
+.poster{width:100%;max-width:520px;background:#fffdf3;border:7px solid var(--lostd);border-radius:24px;padding:14px 26px 24px;box-shadow:inset 0 0 0 4px #fff0cf,0 22px 40px rgba(0,0,0,.16),8px 10px 0 -2px rgba(201,83,44,.25);transform:rotate(-.6deg);transition:transform .35s;animation:up .5s both}
+.poster.found{border-color:var(--foundd);box-shadow:inset 0 0 0 4px #f6f3c8,0 22px 40px rgba(0,0,0,.16),8px 10px 0 -2px rgba(155,155,54,.3)}
+.poster:hover{transform:rotate(0)}
+.holes{display:flex;justify-content:space-between;margin-bottom:12px}.holes i{width:14px;height:14px;border-radius:50%;background:var(--line)}
+.ribbon{margin:0 auto;width:fit-content;min-width:60%;text-align:center;font-family:var(--serif);font-weight:700;font-size:1.7rem;letter-spacing:2px;padding:6px 36px;background:var(--lost);clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%)}
+.found .ribbon{background:var(--found)}
+.ptag{text-align:center;margin:8px 0 12px;color:var(--muted);font-style:italic}
+.polaroid{position:relative;background:#fff;padding:10px;border-radius:10px;box-shadow:0 4px 0 var(--line),0 0 0 1.5px var(--line);cursor:pointer;transform:rotate(.8deg);transition:.3s}
+.polaroid:hover{transform:rotate(0) scale(1.02)}
+.polaroid #prev{min-height:150px;display:grid;place-items:center;border-radius:6px;background:var(--bg);color:var(--muted);font-weight:600;text-align:center}
+.polaroid img{width:100%;max-height:220px;object-fit:cover;border-radius:6px}
+.tape{position:absolute;width:70px;height:20px;background:rgba(166,207,244,.75);top:-8px}.t1{left:-14px;transform:rotate(-35deg)}.t2{right:-14px;transform:rotate(35deg)}
+.bub{margin-top:14px;background:#fff;border:2px solid var(--lost);border-radius:14px;padding:8px 14px}.found .bub{border-color:var(--foundd)}
+.bub label{display:block;font-size:.78rem;font-weight:700;color:var(--muted)}
+.bub input{width:100%;border:0;outline:0;padding:4px 0;font-size:1rem;background:transparent}
+.confirm{display:block;margin:18px auto 0;border:2.5px dashed var(--text);border-radius:99px;padding:11px 46px;font-weight:800;cursor:pointer;background:var(--lost);transition:.2s}
+.confirm.found{background:var(--found)}.confirm:hover{transform:translateY(-3px) scale(1.04)}

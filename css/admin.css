@@ -1,0 +1,10 @@
+/* Admin panel */
+.atabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0}.atabs .pill{background:#fff;border-color:var(--line)}.atabs .pill.on{background:var(--a2)}
+.astats{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.ast{border:1.5px solid var(--text);border-radius:18px;padding:16px;background:#fff;font-size:.82rem;color:var(--muted);transition:.3s}.ast:hover{transform:translateY(-4px) rotate(-.6deg);background:var(--a2)}
+.ast b{display:block;font-family:var(--serif);font-size:2.2rem;color:var(--text);line-height:1.1}
+.abody{padding-bottom:30px}.alist{display:grid;gap:10px}
+.arow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:10px 14px}.arow>span{flex:1;min-width:200px}
+details.arow{display:block}details.arow summary{cursor:pointer}details.arow .sm{margin-top:8px}
+.stag{display:inline-block;font-size:.66rem;font-weight:800;padding:2px 9px;border-radius:99px;background:var(--text);color:#fff;text-transform:uppercase}
+.setf{max-width:560px}
